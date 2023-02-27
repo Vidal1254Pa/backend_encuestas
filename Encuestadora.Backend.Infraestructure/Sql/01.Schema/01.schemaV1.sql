@@ -1,4 +1,7 @@
-use examen_macro
+--create database examen_macro;
+go
+--use examen_macro;
+go
 CREATE TABLE  Provincia(
     Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
     Nombre VARCHAR(150) NOT NULL
