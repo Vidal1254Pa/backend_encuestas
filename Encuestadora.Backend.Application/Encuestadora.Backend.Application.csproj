@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cotizador.Backend.Domain\Cotizador.Backend.Domain.csproj" />
+    <ProjectReference Include="..\Cotizador.Backend.Shared\Cotizador.Backend.Shared.csproj" />
+    <ProjectReference Include="..\Encuestadora.Backend.Domain\Encuestadora.Backend.Domain.csproj" />
+    <ProjectReference Include="..\Encuestadora.Backend.Shared\Encuestadora.Backend.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Requerimiento\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Requerimiento\" />
+  </ItemGroup>
+</Project>

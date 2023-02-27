@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Sql\02.DataTypes\" />
+    <Folder Include="Requerimiento\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cotizador.Backend.Domain\Cotizador.Backend.Domain.csproj" />
+    <ProjectReference Include="..\Cotizador.Backend.Shared\Cotizador.Backend.Shared.csproj" />
+    <ProjectReference Include="..\Encuestadora.Backend.Domain\Encuestadora.Backend.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Requerimiento\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="System.Data.SqlClient" />
+    <None Remove="Configuracion\Domain\" />
+    <None Remove="Configuracion\DTO\" />
+    <None Remove="Requerimiento\" />
+    <None Remove="Requerimiento\Domain\" />
+    <None Remove="Requerimiento\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuracion\Domain\" />
+    <Folder Include="Configuracion\DTO\" />
+    <Folder Include="Requerimiento\" />
+    <Folder Include="Requerimiento\Domain\" />
+    <Folder Include="Requerimiento\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Encuestadora.Backend.Shared\Encuestadora.Backend.Shared.csproj" />
+  </ItemGroup>
+</Project>
